@@ -9,9 +9,9 @@ import com.example.note.context.ActivityContext;
 import com.example.note.login.LoginActivity;
 
 /**
- * author: 13482
+ * author: LL
  * created on: 2021/6/26 18:42
- * description:
+ * description: ACTIVITY工具类
  */
 public class ActivityUtil {
 

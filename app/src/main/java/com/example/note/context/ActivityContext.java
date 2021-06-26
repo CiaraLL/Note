@@ -26,6 +26,7 @@ public class ActivityContext implements Application.ActivityLifecycleCallbacks {
   @NonNull
   private static final ActivityContext ACTIVITY_CONTEXT = new ActivityContext();
 
+  // 获得实例
   @NonNull
   public static ActivityContext get() {
     return ACTIVITY_CONTEXT;
