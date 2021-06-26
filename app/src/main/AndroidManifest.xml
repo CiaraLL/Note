@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.note"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <application
+    android:name=".application.MyApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <activity
+      android:name=".login.LoginActivity"
+      android:launchMode="singleInstance">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"></action>
+        <category android:name="android.intent.category.LAUNCHER"></category>
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".register.RegisterActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".home.HomeActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".addnote.AddNoteActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".home.notedetails.NoteDetailsActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".set.modifypwd.ModifyPwdActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".set.userinfo.ModifyInfoActivity"
+      android:launchMode="singleInstance" />
+
+    <activity
+      android:name=".set.userinfo.ShowInfoActivity"
+      android:launchMode="singleInstance"></activity>
+  </application>
+
+</manifest>
