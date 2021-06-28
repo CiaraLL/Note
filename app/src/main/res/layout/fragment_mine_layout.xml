@@ -18,7 +18,7 @@
       android:layout_height="100dp"
       android:layout_margin="20dp"
       android:background="@drawable/circle_background"
-      android:src="@drawable/strawberry" />
+      android:src="" />
 
     <TextView
       android:id="@+id/mine_page_user_nick_name"
