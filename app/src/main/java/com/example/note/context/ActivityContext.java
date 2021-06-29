@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
  * created on: 2021/6/22 23:49
  * description: activity实例管理
  */
-public class  ActivityContext implements Application.ActivityLifecycleCallbacks {
+public class ActivityContext implements Application.ActivityLifecycleCallbacks {
 
   // 当前所有的activity
   @NonNull
