@@ -34,7 +34,7 @@ public class ActivityContext implements Application.ActivityLifecycleCallbacks {
 
   // 获取所有的activity
   @NonNull
-  public List<WeakReference<Activity>> getmActivityStack() {
+  public List<WeakReference<Activity>> getActivityStack() {
     return mActivityStack;
   }
 

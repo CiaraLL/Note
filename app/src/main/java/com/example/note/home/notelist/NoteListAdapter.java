@@ -21,9 +21,6 @@ import javax.xml.transform.Result;
  */
 public class NoteListAdapter extends RecyclerView.Adapter<NoteViewHolder> {
 
-  @NonNull
-  private NoteDataCatch mNoteDataCatch;
-
   @Nullable
   private NoteListListener mNoteListListener;
 

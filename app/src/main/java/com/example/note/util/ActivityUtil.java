@@ -6,7 +6,6 @@ import android.app.Activity;
 import androidx.annotation.NonNull;
 
 import com.example.note.context.ActivityContext;
-import com.example.note.login.LoginActivity;
 
 /**
  * author: LL
@@ -21,7 +20,7 @@ public class ActivityUtil {
    * @param clazz
    */
   public static void closeAllActivities(@NonNull Class<? extends Activity> clazz) {
-    for (WeakReference<Activity> activityReference : ActivityContext.get().getmActivityStack()) {
+    for (WeakReference<Activity> activityReference : ActivityContext.get().getActivityStack()) {
       if (activityReference == null) {
         continue;
       }
