@@ -71,8 +71,6 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteViewHolder> {
         mNoteListListener.onItemClickListener(note);
       }
     });
-
-
   }
 
   @Override

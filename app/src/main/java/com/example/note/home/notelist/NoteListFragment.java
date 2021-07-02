@@ -30,8 +30,6 @@ import java.util.List;
  * 笔记页面
  */
 public class NoteListFragment extends BaseFragment {
-  //整个页面
-  private View mContainer;
 
   private RecyclerView mRecyclerView;
   private NoteListAdapter mNoteListAdapter;
@@ -56,7 +54,6 @@ public class NoteListFragment extends BaseFragment {
     public void onItemClickListener(@NonNull Note note) {
       showNoteDetails(note);
       return;
-
     }
   };
 
