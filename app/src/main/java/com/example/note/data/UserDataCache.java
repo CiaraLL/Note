@@ -46,13 +46,10 @@ public class UserDataCache {
    * @param isOverride 根据user.mAccount,是否复写
    * @return
    */
-  public boolean putUser(@NonNull User user, boolean isOverride) {
+  public boolean putUser(@NonNull User user) {
     HashMap<String, User> userMap = getAllUser();
     if (userMap == null) {
       userMap = new HashMap<>();
-    }
-    if (userMap.containsKey(user.mAccount) && !isOverride) {
-      return false;
     }
     userMap.put(user.mAccount, user);
     SharePreferenceHelper.save(SH_USER_NAME, userMap, IS_CACHE_USER_RELATIVE);
@@ -63,7 +60,7 @@ public class UserDataCache {
    * 修改用户信息，根据用户account索引
    */
   public boolean updateUser(@NonNull User user) {
-    return putUser(user, true);
+    return putUser(user);
   }
 
 }

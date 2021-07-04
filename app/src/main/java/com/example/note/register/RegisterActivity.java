@@ -64,15 +64,14 @@ public class RegisterActivity extends AppCompatActivity {
       return;
     }
 
-    boolean flag = mUserDataCache.putUser(new User(account, password), false);
-
-    if (flag) {
-      Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
-      // 注册成功跳转登录页面
-      LoginActivity.start(RegisterActivity.this);
-    } else {
+    if (mUserDataCache.getUserByAccount(account) != null) {
       Toast.makeText(RegisterActivity.this, "用户已经注册过", Toast.LENGTH_SHORT).show();
+      return;
     }
 
+    mUserDataCache.putUser(new User(account, password));
+    Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+    // 注册成功跳转登录页面
+    LoginActivity.start(RegisterActivity.this);
   }
 }
