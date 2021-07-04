@@ -73,5 +73,6 @@ public class RegisterActivity extends AppCompatActivity {
     Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
     // 注册成功跳转登录页面
     LoginActivity.start(RegisterActivity.this);
+    finish();
   }
 }
